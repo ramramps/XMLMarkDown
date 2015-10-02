@@ -10,10 +10,10 @@ environment:
     secure: CtV9XcQ8dUwJoI5XvZS21wl/S72lgnBB0k1eK5GAjseS6Z33uuvLALxVFAq6IqLT
 build_script:
   - msbuild %xmlDocs_solution%
-
-on_success:  
-- git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
-- git config --global credential.helper store
-- git clone https://%access_token%@github.com/DynamoDS/DynamoAPI.git
-   
+ 
+on_success: 
+     - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR 
+     - git config --global credential.helper store 
+     - ps : Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n&quot; 
+     - git clone https://github.com/DynamoDS/DynamoAPI.git 
 test: off
