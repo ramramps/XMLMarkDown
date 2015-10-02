@@ -14,9 +14,9 @@ build_script:
   
   
 install: 
-     - ps : $env:APPVEYOR_PULL_REQUEST_NUMBER
+       $env:APPVEYOR_PULL_REQUEST_NUMBER
      - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR 
      - git config --global credential.helper store 
-     - ps : Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+     - ps :Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
      - git clone https://%access_token%@github.com/DynamoDS/DynamoAPI.git 
-test: off
+test: off 
