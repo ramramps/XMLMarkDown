@@ -14,7 +14,7 @@ build_script:
   
   
 on_success:    
-     - ps Get-ChildItem env:  
+     Get-ChildItem env:  
      - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR 
      - git config --global credential.helper store      
      - git clone https://%oauth_access_token%@github.com/DynamoDS/DynamoAPI.git
