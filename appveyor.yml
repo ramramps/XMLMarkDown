@@ -4,10 +4,14 @@ platform: Any CPU
 
 configuration: Release
 
+init:
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
 environment:
   xmlDocs_solution: XmlDocToMarkdown/XmlDocToMarkdown.sln
   oauth_access_token:
-    secure: e5YJnLQDNcrh0zZzbWegPWWW8niSseaho1DOrENpCwHa0PMIPKQeag772ud0A69w
+    secure: CtV9XcQ8dUwJoI5XvZS21wl/S72lgnBB0k1eK5GAjseS6Z33uuvLALxVFAq6IqLT
 
 build_script:
  - msbuild %xmlDocs_solution%
