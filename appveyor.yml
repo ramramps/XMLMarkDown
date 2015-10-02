@@ -13,6 +13,7 @@ build_script:
 
 
 on_success:  
+ $env:APPVEYOR_PULL_REQUEST_NUMBER
  - ps: >- 
     if($env:APPVEYOR_PULL_REQUEST_NUMBER -eq '') {	
       git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
