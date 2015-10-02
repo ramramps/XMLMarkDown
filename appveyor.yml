@@ -14,7 +14,7 @@ build_script:
   
   
 install: 
-     -ps Get-ChildItem Env:
+     - ps Get-ChildItem Env:
      - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR 
      - git config --global credential.helper store 
      - ps :Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
