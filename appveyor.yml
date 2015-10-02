@@ -7,7 +7,7 @@ configuration: Release
 environment:
   xmlDocs_solution: XmlDocToMarkdown/XmlDocToMarkdown.sln
   oauth_access_token:
-    secure: CtV9XcQ8dUwJoI5XvZS21wl/S72lgnBB0k1eK5GAjseS6Z33uuvLALxVFAq6IqLT
+    secure: e5YJnLQDNcrh0zZzbWegPWWW8niSseaho1DOrENpCwHa0PMIPKQeag772ud0A69w
 
 build_script:
  - msbuild %xmlDocs_solution%
