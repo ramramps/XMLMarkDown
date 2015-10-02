@@ -18,8 +18,7 @@ on_success:
  - ps: >- 
     if(-not $env:APPVEYOR_PULL_REQUEST_NUMBER) {	
       git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
-      git config --global credential.helper store
-      Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:oauth_access_token):x-oauth-basic@github.com`n" 
+      git config --global credential.helper store       
       git clone https://%oauth_access_token%@github.com/DynamoDS/DynamoAPI.git        
     }  
 test: off 
