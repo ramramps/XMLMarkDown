@@ -11,7 +11,6 @@ environment:
 build_script:
   - msbuild %xmlDocs_solution%
 
-
 on_success:  
      - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
      - git config --global credential.helper store
