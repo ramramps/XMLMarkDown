@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DocumentationTestLibrary</name>
+    </assembly>
+    <members>
+        <member name="F:Dynamo.DocumentationTestLibrary.ClasswithNoMethods.test1">
+            <summary>
+            The test1
+            </summary>
+        </member>
+        <member name="M:Dynamo.DocumentationTestLibrary.ClasswithNoMethods.TestMethod">
+            <summary>
+            Tests the method.
+            </summary>
+        </member>
+        <member name="E:Dynamo.DocumentationTestLibrary.ClasswithNoMethods.TestEvents">
+            <summary>
+            Occurs when [test events].
+            </summary>
+        </member>
+    </members>
+</doc>

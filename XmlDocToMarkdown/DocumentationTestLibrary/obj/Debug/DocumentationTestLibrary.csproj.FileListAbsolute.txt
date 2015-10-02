@@ -1,0 +1,5 @@
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\DocumentationTestLibrary\bin\Debug\DocumentationTestLibrary.XML
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\DocumentationTestLibrary\bin\Debug\DocumentationTestLibrary.dll
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\DocumentationTestLibrary\bin\Debug\DocumentationTestLibrary.pdb
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\DocumentationTestLibrary\obj\Debug\DocumentationTestLibrary.dll
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\DocumentationTestLibrary\obj\Debug\DocumentationTestLibrary.pdb

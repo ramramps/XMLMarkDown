@@ -1,0 +1,6 @@
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\XmlDocToMarkdown\bin\Debug\XmlDocToMarkdown.exe.config
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\XmlDocToMarkdown\bin\Debug\XmlDocToMarkdown.exe
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\XmlDocToMarkdown\bin\Debug\XmlDocToMarkdown.pdb
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\XmlDocToMarkdown\obj\Debug\XmlDocToMarkdown.exe
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\XmlDocToMarkdown\obj\Debug\XmlDocToMarkdown.pdb
+C:\Users\pollacs\Documents\GitHub\Dynamo\tools\XmlDocToMarkdown\XmlDocToMarkdown\obj\Debug\XmlDocToMarkdown.csprojResolveAssemblyReference.cache
