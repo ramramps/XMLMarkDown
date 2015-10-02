@@ -13,6 +13,7 @@ build_script:
 
 
 on_success:  
+ - ps: $env:APPVEYOR_REPO_COMMIT_AUTHOR
  - ps: >- 
     if($env:APPVEYOR_PULL_REQUEST_NUMBER -eq '') {	
       $env:APPVEYOR_REPO_COMMIT_AUTHOR
@@ -21,6 +22,6 @@ on_success:
       Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n" 
       git clone https://DynamoDS:$($env:access_token)@github.com/DynamoDS/DynamoAPI.git
     }  
-   -ps: $env:APPVEYOR_REPO_COMMIT_AUTHOR
+   
   
 test: off
