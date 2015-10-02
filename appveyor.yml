@@ -16,5 +16,5 @@ build_script:
 on_success:      
      - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR 
      - git config --global credential.helper store      
-     - git clone https://%access_token%@github.com/ramramps/DynamoAPI.git
+     - git clone https://%access_token%@github.com/DynamoDS/DynamoRevit.git
 test: off 
