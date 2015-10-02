@@ -13,10 +13,9 @@ build_script:
  - msbuild %xmlDocs_solution%
   
   
-install: 
-     - ps Get-ChildItem Env:
+on_success:      
      - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR 
      - git config --global credential.helper store 
      - ps :Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-     - git clone https://%access_token%@github.com/DynamoDS/DynamoAPI.git 
+     - git clone https://%access_token%@github.com/DynamoDS/DynamoAPI.git 2>&1 | % { $_.ToString() }
 test: off 
