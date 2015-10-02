@@ -13,15 +13,9 @@ build_script:
 
 
 on_success:  
- - ps: $env:APPVEYOR_PULL_REQUEST_NUMBER
- - ps: >- 
-    if($env:APPVEYOR_PULL_REQUEST_NUMBER -eq '') {	
-      $env:APPVEYOR_REPO_COMMIT_AUTHOR
-      git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
-      git config --global credential.helper store
-      Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n" 
-      git clone https://DynamoDS:$($env:access_token)@github.com/DynamoDS/DynamoAPI.git
-    }  
+     - git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
+     - git config --global credential.helper store
+     - ps : Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n" 
+     - git clone https://DynamoDS:$($env:access_token)@github.com/DynamoDS/DynamoAPI.git
    
-  
 test: off
