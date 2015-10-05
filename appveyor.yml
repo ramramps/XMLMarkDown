@@ -22,7 +22,7 @@ on_success:
       git config --global user.name $env:APPVEYOR_REPO_COMMIT_AUTHOR
       git config --global credential.helper store    
       Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"   
-      git clone -q https://DynamoDS:$($env:oauth_access_token):x-oauth-basic@github.com/DynamoDS/DynamoAPI.git  c:\projects\xmlmarkdown\DynamoAPI 2>&1 | % { $_.ToString() }      
+      git clone -q https://$($env:oauth_access_token):x-oauth-basic@github.com/DynamoDS/DynamoAPI.git  c:\projects\xmlmarkdown\DynamoAPI 2>&1 | % { $_.ToString() }      
     }
   
 test: off 
