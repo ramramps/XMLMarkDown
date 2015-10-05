@@ -11,7 +11,7 @@ init:
 environment:
   xmlDocs_solution: XmlDocToMarkdown/XmlDocToMarkdown.sln
   oauth_access_token:
-    secure: WlBH06AD2+KPP2EmpDsoMLW5b4HL1D34AnfNjFz6lDtPXaTYSaPgfnOVMV1ULbNy
+    secure: 9V2HPr20tWakE4vLSsHHzE0UyGuU4UCKEbUwK4UJIlseBRuw+j5WBaEWQYXl+M8W
 
 build_script:
  - msbuild %xmlDocs_solution%
